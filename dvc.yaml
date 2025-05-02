@@ -6,8 +6,16 @@ stages:
     outs:
     - data/raw/raw_data.csv
   preprocess_data:
-    cmd: \ -d scripts/preprocess_data.py -d data/raw/raw_data.csv -o data/processed/processed_data.csv
-      \ python scripts/preprocess_data.py
+    cmd: \ -d scripts/preprocess_data.py
+    deps:
+      - scripts/preprocess_data.py
+      - data/raw/raw_data.csv
+    outs:
+      - data/processed/processed_data.csv
   train_model:
-    cmd: \ -d scripts/train_model.py -d data/processed/processed_data.csv -o models/model.pkl
-      \ python scripts/train_model.py
+    cmd: \ -d scripts/train_model.py
+    deps:
+      - scripts/train_model.py
+      - data/processed/processed_data.csv
+    outs:
+      - models/model.pkl

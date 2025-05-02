@@ -1,0 +1,14 @@
+schema: '2.0'
+stages:
+  collect_data:
+    cmd: python scripts/collect_data.py
+    deps:
+    - path: scripts/collect_data.py
+      hash: md5
+      md5: 3956826ba4ce97b122c8a372f3b10904
+      size: 3000
+    outs:
+    - path: data/raw/raw_data.csv
+      hash: md5
+      md5: 122ea04d81ff1c6386d9268d47424e7a
+      size: 102
