@@ -1,6 +1,6 @@
 [core]
     remote = myremote
-['remote "gdrive_remote"']
-    url = gdrive://1XEYptGxAnxzAh7Cvgrl75pEtz7I4PkV3
-['remote "myremote"']
-    url = /absolute/path/to/remote/storage
+
+[remote "myremote"]
+    url = D:/Semester 8/mlops/Assignment03/dvc-storage
+    type = local
