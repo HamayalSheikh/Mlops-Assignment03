@@ -30,7 +30,7 @@
 
 import requests
 import csv
-from datetime import datetime
+from datetime import datetime, timezone
 
 API_KEY = '65fd833bd0877ed9ae3333d9417463f0'  # Replace with your actual API key
 CITY = 'Lahore'
@@ -49,7 +49,8 @@ def collect_weather_data():
             'humidity': data['main']['humidity'],
             'wind_speed': data['wind']['speed'],
             'weather_condition': data['weather'][0]['main'],
-            'datetime': datetime.utcnow().strftime('%Y-%m-%d %H:%M:%S')
+            'datetime': datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M:%S')
+            # 'datetime': datetime.utcnow().strftime('%Y-%m-%d %H:%M:%S')
         }
 
         # Specify the file path to save the raw data
