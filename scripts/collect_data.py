@@ -31,6 +31,7 @@
 import requests
 import csv
 from datetime import datetime, timezone
+import os
 
 API_KEY = '65fd833bd0877ed9ae3333d9417463f0'  # Replace with your actual API key
 CITY = 'Karachi'
@@ -55,6 +56,7 @@ def collect_weather_data():
 
         # Specify the file path to save the raw data
         filename = 'data/raw/raw_data.csv'
+        os.makedirs(os.path.dirname(filename), exist_ok=True)
 
         # Write header if file doesn't exist
         try:

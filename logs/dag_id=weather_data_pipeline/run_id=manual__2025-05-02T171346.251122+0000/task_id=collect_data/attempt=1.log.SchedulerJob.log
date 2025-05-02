@@ -1,0 +1,1 @@
+[2025-05-02T17:14:00.628+0000] {task_context_logger.py:104} ERROR - Executor reports task instance <TaskInstance: weather_data_pipeline.collect_data manual__2025-05-02T17:13:46.251122+00:00 [queued]> finished (failed) although the task says it's queued. (Info: None) Was the task killed externally?

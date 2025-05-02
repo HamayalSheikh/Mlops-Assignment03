@@ -1,0 +1,25 @@
+[2025-05-02T16:36:17.082+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-05-02T16:36:17.125+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: weather_data_pipeline.collect_data manual__2025-05-02T16:36:09.916573+00:00 [queued]>
+[2025-05-02T16:36:17.137+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: weather_data_pipeline.collect_data manual__2025-05-02T16:36:09.916573+00:00 [queued]>
+[2025-05-02T16:36:17.138+0000] {taskinstance.py:2303} INFO - Starting attempt 1 of 1
+[2025-05-02T16:36:17.157+0000] {taskinstance.py:2327} INFO - Executing <Task(BashOperator): collect_data> on 2025-05-02 16:36:09.916573+00:00
+[2025-05-02T16:36:17.176+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=104) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-05-02T16:36:17.179+0000] {standard_task_runner.py:63} INFO - Started process 106 to run task
+[2025-05-02T16:36:17.179+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'weather_data_pipeline', 'collect_data', 'manual__2025-05-02T16:36:09.916573+00:00', '--job-id', '56', '--raw', '--subdir', 'DAGS_FOLDER/weather_pipeline_dag.py', '--cfg-path', '/tmp/tmp5cwa9ig6']
+[2025-05-02T16:36:17.183+0000] {standard_task_runner.py:91} INFO - Job 56: Subtask collect_data
+[2025-05-02T16:36:17.255+0000] {task_command.py:426} INFO - Running <TaskInstance: weather_data_pipeline.collect_data manual__2025-05-02T16:36:09.916573+00:00 [running]> on host b0cbeac4e64c
+[2025-05-02T16:36:17.348+0000] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='weather_data_pipeline' AIRFLOW_CTX_TASK_ID='collect_data' AIRFLOW_CTX_EXECUTION_DATE='2025-05-02T16:36:09.916573+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-02T16:36:09.916573+00:00'
+[2025-05-02T16:36:17.350+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-05-02T16:36:17.365+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-05-02T16:36:17.368+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python /opt/***/scripts/collect_data.py']
+[2025-05-02T16:36:17.385+0000] {subprocess.py:86} INFO - Output:
+[2025-05-02T16:36:18.542+0000] {subprocess.py:93} INFO - API Response:  {'coord': {'lon': 67.0822, 'lat': 24.9056}, 'weather': [{'id': 802, 'main': 'Clouds', 'description': 'scattered clouds', 'icon': '03n'}], 'base': 'stations', 'main': {'temp': 28.11, 'feels_like': 31.75, 'temp_min': 28.11, 'temp_max': 28.11, 'pressure': 1005, 'humidity': 76, 'sea_level': 1005, 'grnd_level': 1002}, 'visibility': 10000, 'wind': {'speed': 6.24, 'deg': 237, 'gust': 6.47}, 'clouds': {'all': 36}, 'dt': 1746203418, 'sys': {'country': 'PK', 'sunrise': 1746147324, 'sunset': 1746194506}, 'timezone': 18000, 'id': 1174872, 'name': 'Karachi', 'cod': 200}
+[2025-05-02T16:36:18.551+0000] {subprocess.py:93} INFO - Weather data saved successfully.
+[2025-05-02T16:36:18.579+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2025-05-02T16:36:18.582+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-05-02T16:36:18.606+0000] {taskinstance.py:1205} INFO - Marking task as SUCCESS. dag_id=weather_data_pipeline, task_id=collect_data, execution_date=20250502T163609, start_date=20250502T163617, end_date=20250502T163618
+[2025-05-02T16:36:18.643+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-05-02T16:36:18.670+0000] {taskinstance.py:3482} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-05-02T16:36:18.674+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
