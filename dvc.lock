@@ -12,3 +12,35 @@ stages:
       hash: md5
       md5: 122ea04d81ff1c6386d9268d47424e7a
       size: 102
+  preprocess_data:
+    cmd: python scripts/preprocess_data.py
+    deps:
+    - path: data/raw/raw_data.csv
+      hash: md5
+      md5: 122ea04d81ff1c6386d9268d47424e7a
+      size: 102
+    - path: scripts/preprocess_data.py
+      hash: md5
+      md5: 786fd34fe76d3fb9ab5558db72a37797
+      size: 1386
+    outs:
+    - path: data/processed/processed_data.csv
+      hash: md5
+      md5: 74805beacbd8967961bcced263e9cd68
+      size: 100
+  train_model:
+    cmd: python scripts/train_model.py
+    deps:
+    - path: data/processed/processed_data.csv
+      hash: md5
+      md5: 74805beacbd8967961bcced263e9cd68
+      size: 100
+    - path: scripts/train_model.py
+      hash: md5
+      md5: 3d2e6bdbcc13de6f91fcfd3fbc9b2e3a
+      size: 427
+    outs:
+    - path: models/model.pkl
+      hash: md5
+      md5: 6f977682a32921d4583c23e9ee50eb36
+      size: 539
