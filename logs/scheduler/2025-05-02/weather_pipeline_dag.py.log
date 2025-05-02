@@ -1792,3 +1792,17 @@ SyntaxError: invalid syntax
 [2025-05-02T17:43:21.077+0000] {logging_mixin.py:188} INFO - [2025-05-02T17:43:21.077+0000] {dag.py:3096} INFO - Sync 1 DAGs
 [2025-05-02T17:43:21.103+0000] {logging_mixin.py:188} INFO - [2025-05-02T17:43:21.103+0000] {dag.py:3954} INFO - Setting next_dagrun for weather_data_pipeline to 2025-05-02 00:00:00+00:00, run_after=2025-05-03 00:00:00+00:00
 [2025-05-02T17:43:21.122+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_pipeline_dag.py took 0.117 seconds
+[2025-05-02T17:43:51.385+0000] {processor.py:161} INFO - Started process (PID=3792) to work on /opt/airflow/dags/weather_pipeline_dag.py
+[2025-05-02T17:43:51.387+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_pipeline_dag.py for tasks to queue
+[2025-05-02T17:43:51.390+0000] {logging_mixin.py:188} INFO - [2025-05-02T17:43:51.389+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/weather_pipeline_dag.py
+[2025-05-02T17:43:51.429+0000] {processor.py:840} INFO - DAG(s) 'weather_data_pipeline' retrieved from /opt/airflow/dags/weather_pipeline_dag.py
+[2025-05-02T17:43:51.451+0000] {logging_mixin.py:188} INFO - [2025-05-02T17:43:51.450+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-02T17:43:51.474+0000] {logging_mixin.py:188} INFO - [2025-05-02T17:43:51.474+0000] {dag.py:3954} INFO - Setting next_dagrun for weather_data_pipeline to 2025-05-02 00:00:00+00:00, run_after=2025-05-03 00:00:00+00:00
+[2025-05-02T17:43:51.502+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_pipeline_dag.py took 0.125 seconds
+[2025-05-02T17:44:21.641+0000] {processor.py:161} INFO - Started process (PID=3850) to work on /opt/airflow/dags/weather_pipeline_dag.py
+[2025-05-02T17:44:21.642+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather_pipeline_dag.py for tasks to queue
+[2025-05-02T17:44:21.647+0000] {logging_mixin.py:188} INFO - [2025-05-02T17:44:21.646+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/weather_pipeline_dag.py
+[2025-05-02T17:44:21.701+0000] {processor.py:840} INFO - DAG(s) 'weather_data_pipeline' retrieved from /opt/airflow/dags/weather_pipeline_dag.py
+[2025-05-02T17:44:21.728+0000] {logging_mixin.py:188} INFO - [2025-05-02T17:44:21.727+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-05-02T17:44:21.751+0000] {logging_mixin.py:188} INFO - [2025-05-02T17:44:21.751+0000] {dag.py:3954} INFO - Setting next_dagrun for weather_data_pipeline to 2025-05-02 00:00:00+00:00, run_after=2025-05-03 00:00:00+00:00
+[2025-05-02T17:44:21.784+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather_pipeline_dag.py took 0.153 seconds
