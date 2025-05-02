@@ -1,6 +1,4 @@
 [core]
     remote = myremote
-
-[remote "myremote"]
-    url = D:/Semester 8/mlops/Assignment03/dvc-storage
-    type = local
+['remote "myremote"']
+    url = ./dvc-storage
