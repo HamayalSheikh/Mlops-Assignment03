@@ -33,7 +33,7 @@ import csv
 from datetime import datetime, timezone
 
 API_KEY = '65fd833bd0877ed9ae3333d9417463f0'  # Replace with your actual API key
-CITY = 'Lahore'
+CITY = 'Karachi'
 URL = f'http://api.openweathermap.org/data/2.5/weather?q={CITY}&appid={API_KEY}&units=metric'
 
 def collect_weather_data():
