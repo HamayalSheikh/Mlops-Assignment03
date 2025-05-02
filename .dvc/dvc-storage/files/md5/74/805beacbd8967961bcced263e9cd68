@@ -1,0 +1,2 @@
+temperature,humidity,wind_speed,weather_condition,datetime
+0.0,0.0,0.0,Clouds,2025-05-02 18:12:35
