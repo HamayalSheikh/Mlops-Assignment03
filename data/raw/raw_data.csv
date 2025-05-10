@@ -1,2 +1,4 @@
 temperature,humidity,wind_speed,weather_condition,datetime
 27.95,78,6.12,Clouds,2025-05-02 18:12:35
+28.92,73,7.23,Clear,2025-05-10 15:23:04
+28.92,73,7.23,Clear,2025-05-10 15:23:08

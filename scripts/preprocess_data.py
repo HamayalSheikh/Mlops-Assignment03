@@ -13,7 +13,7 @@ import pandas as pd
 from sklearn.preprocessing import StandardScaler
 import os
 
-# df = pd.read_csv('data/raw/raw_data.csv')
+df = pd.read_csv('data/raw/raw_data.csv')
 # df.dropna(inplace=True)
 # Create the processed directory if it doesn't exist
 os.makedirs('/opt/airflow/data/processed', exist_ok=True)

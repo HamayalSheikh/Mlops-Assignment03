@@ -1,1 +1,9 @@
 logs/
+mlartifacts/
+mlruns/
+venv/
+.env
+logs/dag_processor_manager/
+logs/scheduler/
+
+
