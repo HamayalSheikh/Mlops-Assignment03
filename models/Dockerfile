@@ -5,10 +5,12 @@ FROM python:3.10
 WORKDIR /app
 
 # Copy the necessary files
-COPY scripts/train_model.py /app/train_model.py
-COPY requirements.txt /app/requirements.txt
-COPY data /app/data
-COPY models /app/models
+COPY ../scripts/train_model.py /app/train_model.py
+COPY ../requirements.txt /app/requirements.txt
+COPY ../data /app/data
+# COPY models /app/models
+COPY ../models /app/models
+
 
 # Install dependencies
 RUN pip install --upgrade pip && \
