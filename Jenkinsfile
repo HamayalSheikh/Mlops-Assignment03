@@ -40,11 +40,11 @@ pipeline {
     }
 
     post {
-        success {
-            echo '✅ Docker images built and pushed successfully.'
-        }
-        failure {
-            echo '❌ Build or push failed.'
-        }
+       success {
+    echo 'Docker images built and pushed successfully.'
+}
+failure {
+    echo 'Build or push failed.'
+}
     }
 }
